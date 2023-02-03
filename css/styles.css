@@ -1,0 +1,151 @@
+/**** Section styles ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=EB+Garamond&family=Enriqueta&display=swap');
+:root {
+    --enriqueta: 'Enriqueta', serif;
+    --border-rad: 3px;
+    --border: 1px black solid;
+    --col-marg: 0.1rem;
+    --col-pad: 0.1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3 {
+    font-variant: small-caps;
+}
+
+/**** Grid ****/
+.container {
+    padding: 1.5rem 1.5rem;
+    margin: 4rem 4.5vw;
+    max-width: 90vw;
+}
+.container h3 {
+    padding-bottom: 2rem;
+    text-decoration: underline;
+}
+.columns {
+    display: grid;
+    flex-direction: column;
+    padding: 0 0.05rem;
+}
+.rows {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem 0;
+}
+
+
+/****  Alignment ****/
+/* y-axis */
+.top {
+    display: flex;
+    align-items: flex-end;
+}
+.bottom {
+    display: flex;
+    align-items: flex-start;
+}
+.center-y {
+    display: flex;
+    align-items: center;
+}
+/* x-axis */
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+.center-x {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+/* Header styles */
+.header-bg {
+    background:linear-gradient(180deg, #B90000 15.4%, #EF9E00 53.81%, #000000 64.55%);
+    background-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 90px;
+    box-shadow: 0px 3px 1rem 0rem black;
+}
+
+#header .rows {
+    height: 50%;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
+/* Column sizes */
+/* Col sizes add up to 10 */
+.col-1 {
+    width: 10%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-2 {
+    width: 20%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-3 {
+    width: 30%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-4 {
+    width: 40%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-5 {
+    width: 50%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-6 {
+    width: 60%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-7 {
+    width: 70%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-9 {
+    width: 80%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-9 {
+    width: 90%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}
+.col-10 {
+    width: 100%;
+    padding: var(--col-pad);
+    margin: var(--col-marg);
+}

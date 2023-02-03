@@ -1,0 +1,14 @@
+/* Styles for Members table */
+
+
+.buttons {
+    padding: 0.5rem 0;
+}
+
+.buttons i {
+    padding:0.1rem 0.3rem;
+    color: black;
+    background-color: darkgray;
+    border-radius: 5px;
+    border: 0.2px solid;
+}

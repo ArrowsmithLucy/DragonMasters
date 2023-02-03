@@ -1,0 +1,54 @@
+/* Home page styles */
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-right: 0.3rem;
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+}
+
+.single-event {
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    margin: 0 1.6rem;
+}
+
+.add-new-button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.single-race {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    border-radius: var(--border-rad);
+    padding: 0.8rem;
+    margin: 0.5rem 0.8rem;
+    align-content: flex-start;
+    justify-content: space-around;
+    width: 21rem;
+}
+
+.members-box {
+    border: 0.5px solid black;
+}
+
+.btn-under {
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
