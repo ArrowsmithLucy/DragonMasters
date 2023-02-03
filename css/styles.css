@@ -17,6 +17,16 @@ h1, h3 {
     font-variant: small-caps;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #ff8500;
+}
+
+
 /**** Grid ****/
 .container {
     padding: 1.5rem 1.5rem;
@@ -64,7 +74,7 @@ h1, h3 {
 }
 .center-x {
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
@@ -83,7 +93,7 @@ h1, h3 {
 
 #header .rows {
     height: 50%;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo h1 {
