@@ -10,6 +10,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
+    <script src="js/localStorageOps.js"></script>
     <!-- JS files -->
 </head>
 
@@ -52,9 +53,6 @@
                             <input id="eventLoc" placeholder="Geelong River" readonly>
                             <input id="eventAttendees" placeholder="15">
                         </div>
-                        <div class="rows btn-under">
-                            <button href="#">Show</button>
-                        </div>
                     </div>
                 </div>
                 <div class="single-race">
@@ -73,16 +71,13 @@
                             <input id="eventLoc" placeholder="Yarra River" readonly>
                             <input id="eventAttendees" placeholder="15">
                         </div>
-                        <div class="btn-under">
-                            <button href="#">Show</button>
-                        </div>
                     </div>
                 </div>
             </div>
           
     
             <div class="add-new-button">
-                <button onclick="addNewEvent()">Add New Event</button>
+                <button><a href="html/add-new-event.html">Add New Event</a></button>
                 <button href="#">Hide^</button>
             </div>
         </div>
@@ -182,7 +177,7 @@
             </div>
             <div class="rows right">
                 <div class="col-2">
-                    <button onclick="addNewRace()">Add New Race</button>
+                    <button><a href="html/add-new-race.html">Add New Race</a></button>
                 </div>
             </div>
 
