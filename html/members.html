@@ -13,7 +13,6 @@
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
     <link href="../css/members.css" rel="stylesheet">
     <!-- JS files -->
-    <script src="../js/header.js"></script>
 
 </head>
 
@@ -39,20 +38,32 @@
     <!-- Trial with bootstrap -->
     <section>
         <div class="container">
-            <div class="row">
+            <div>
                 <div class="col">
                     <h3>Members</h3>
                 </div>
-                <div class="col">
-                    <button type="button" id="filter">
-                        <i class="bi bi-sort-down"></i>
-                    </button>
-                    <button type="button" id="sort">
-                        <i class="bi bi-filter-square"></i>
-                    </button>
+
+                <div class="rows" style="justify-content: space-between;">
+                    <div class="col-3">
+                        <label for="eventChoice">Select Event:</label>
+                        <select name="events" id="eventChoice">
+                            <option value="0" style="text-align: center;">------------------</option>
+                            <option value="1">Saturday 28th August</option>
+                            <option value="1">Saturday 28th August</option>
+                        </select>
+                    </div>
+                    <div class="fit">
+                        <button type="button" id="addNewMember">Add Member</button>
+                        <button type="button" id="editMembers">Edit</button>
+                        <button type="button" id="filter">
+                            <i class="bi bi-sort-down"></i>
+                        </button>
+                        <button type="button" id="sort">
+                            <i class="bi bi-filter-square"></i>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="row">
+                <div class="rows">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
