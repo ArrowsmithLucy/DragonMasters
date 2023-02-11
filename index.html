@@ -10,8 +10,8 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
-    <script src="js/localStorageOps.js"></script>
     <!-- JS files -->
+    <script src="js/localStorageOps.js"></script>
 </head>
 
 <body>
@@ -36,43 +36,8 @@
     <section>
         <div class="container">
             <h3>Upcoming Events</h3>
-            <div class="home-wrapper in-line columns">
-                <div class="single-race">
-                    <div class="single-event">
-                        <div class="labels">
-                            <label for="eventDateFrom">Date From:</label>
-                            <label for="eventDateTo">Date To:</label>
-                            <lavel for="eventTime">Time:</lavel>
-                            <label for="eventLoc">Location:</label>
-                            <label for="eventAttendees">No. attendees:</label>
-                        </div>
-                        <div class="labels">
-                            <input id="eventDate" placeholder="Saturday 14th August" readonly>
-                            <input id="eventDateTo" placeholder="Saturday 14th August" readonly>
-                            <input id="eventTime" placeholder="10:00 am" readonly>
-                            <input id="eventLoc" placeholder="Geelong River" readonly>
-                            <input id="eventAttendees" placeholder="15">
-                        </div>
-                    </div>
-                </div>
-                <div class="single-race">
-                    <div class="single-event">
-                        <div class="labels">
-                            <label for="eventDateFrom">Date From:</label>
-                            <label for="eventDateTo">Date To:</label>
-                            <lavel for="eventTime">Time:</lavel>
-                            <label for="eventLoc">Location:</label>
-                            <label for="eventAttendees">No. attendees:</label>
-                        </div>
-                        <div class="labels">
-                            <input id="eventDateFrom" placeholder="Saturday 28th August" readonly>
-                            <input id="eventDateTo" placeholder="Sunday 29th August" readonly>
-                            <input id="eventTime" placeholder="10:00 AM" readonly>
-                            <input id="eventLoc" placeholder="Yarra River" readonly>
-                            <input id="eventAttendees" placeholder="15">
-                        </div>
-                    </div>
-                </div>
+            <div class="home-wrapper in-line columns" id="upcomingEvents">
+                <!-- Upcoming event output -->
             </div>
           
     
@@ -183,7 +148,6 @@
 
         </div>
     </section>
-
 
 
 

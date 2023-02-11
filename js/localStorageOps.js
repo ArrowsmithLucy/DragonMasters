@@ -20,19 +20,19 @@ function setLocalStorage(keyToSet, data) {
     return localStorage.setItem(keyToSet, JSONConverted)
 }
 
-// //Setting initial local storage on start up 
-// //Arrays
-// if (getLocalStorage(KEY_EVENT) != null) {
-//     events = getLocalStorage(KEY_EVENT);
-// } else {
-//     setLocalStorage(KEY_EVENT, "");
-// }
+//Setting initial local storage on start up 
+//Arrays
+if (getLocalStorage(KEY_EVENT) != null) {
+    events = getLocalStorage(KEY_EVENT);
+} else {
+    setLocalStorage(KEY_EVENT, "");
+}
 
-// if (getLocalStorage(KEY_RACE) != null) {
-//     races = getLocalStorage(KEY_RACE);
-// } else {
-//     setLocalStorage(KEY_RACE, "");
-// }
+if (getLocalStorage(KEY_RACE) != null) {
+    races = getLocalStorage(KEY_RACE);
+} else {
+    setLocalStorage(KEY_RACE, "");
+}
 
 
 // //Indicies

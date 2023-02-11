@@ -11,12 +11,12 @@
     font-size: medium;
 }
 
-.single-event {
+/* .single-event {
     display: flex;
     /* border: 1px solid black; */
-    padding: 1rem 1rem 1rem 2rem;
+    /* padding: 1rem 1rem 1rem 2rem;
     min-width: 390px;
-}
+} */ 
 
 .add-new-button {
     display: inline-flex;
@@ -56,3 +56,18 @@
 .events {
     display: flex;
 }
+
+
+
+/*** Single event new styles ***
+ 
+single race - border box flex
+center-x
+table cells <td> padding
+*/
+
+.grid {
+    display: grid;
+}
+
+
