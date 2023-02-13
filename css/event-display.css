@@ -2,9 +2,9 @@
 .pad-btm {
     padding-bottom: 2%;
 }
-.fill {
+/* .fill {
     min-width: 100%;
-}
+} */
 
 .pad-left {
     padding-left: 4%;
@@ -79,4 +79,48 @@
   }
 
 
+/*** Races ***/
+.race-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
+
+.single-race {
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  border-radius: var(--border-rad);
+  padding: 0.8rem;
+  margin: 0.5rem 0.8rem;
+  align-content: flex-start;
+  justify-content: space-around;
+  width: 22rem;
+  column-count: 1;
+}
+
+.single-race:hover {
+  border: 2px black solid;
+}
+
+@media (min-width: 890px) {
+  .fill {
+    min-width: 100%;
+}
+}
+
+@media (max-width:867.50px) {
+  .single-race {
+    width: -webkit-fill-available;
+    height: 400px;
+  }
+  .screen-width-cols {
+    column-count: 3;
+  }
+  td {
+    width: 150px;
+  }
+
+}

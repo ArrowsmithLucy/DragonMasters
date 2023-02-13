@@ -35,25 +35,27 @@
 
     <section class="container"> <!--Event details -->
         <div class="row">
-            <h3>Event Title:</h3>
-            <table>
-                <tr>
-                    <td>Date:</td>
-                    <td>From - To</td>
-                </tr>
-                <tr>
-                    <td>Location:</td>
-                    <td>Geelong River</td>
-                </tr>
-            </table>
+            <div class="col-6">
+                <h3>Event Title:</h3>
+                <table class="fill">
+                    <tr>
+                        <td>Date:</td>
+                        <td>From - To</td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>Geelong River</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
     <section class="container"> <!-- Members to add -->
         <div class="row">
             <div class="row pad-btm">
-                <button>Particpants</button>
+                <button onclick="showParticipants()">Particpants</button>
             </div>
-            <div class="row">
+            <div class="row" id="participants">
                 <div class="col-6">
                     <table class="fill">
                         <thead>
@@ -77,12 +79,92 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="row end">
-                <button class="tab-btn">Edit</button>
+                <div class="row end">
+                    <button class="tab-btn">Edit</button>
+                </div>
             </div>
         </div>
-
     </section>
+    <section class="container"> <!-- Races to show -->
+        <div class="row race-wrapper in-line columns">
+            <div class="row single-race">
+                <h4>Race #1</h4>
+                <div class="pad-btm">
+                    <table class="fill">
+                        <tr>
+                            <td>Time:</td>
+                            <td>10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Type of race:</td>
+                            <td>10 km</td>
+                        </tr>
+                        <tr>
+                            <td>Boat size:</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Class:</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <label for="raceMembers">Participating Members:</label>
+                <div class="screen-width-cols">
+                    <ol>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row single-race">
+                <h4>Race #1</h4>
+                <div class="pad-btm">
+                    <table class="fill">
+                        <tr>
+                            <td>Time:</td>
+                            <td>10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Type of race:</td>
+                            <td>10 km</td>
+                        </tr>
+                        <tr>
+                            <td>Boat size:</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Class:</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <label for="raceMembers">Participating Members:</label>
+                <div  class="screen-width-cols">
+                    <ol>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                        <li>Teresa Pertzel</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/event-display.js"></script>
 </body>
 </html>
