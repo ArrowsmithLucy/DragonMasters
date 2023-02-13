@@ -6,6 +6,7 @@ Hide & show divs
 
 
 let eventArray = getLocalStorage(KEY_EVENT)
+let index = getLocalStorage(KEY_EVENT_INDEX)
 
 //Function tests if event has passed
 showUpcomingEvents()
@@ -15,7 +16,7 @@ function showUpcomingEvents() {
     let output = ""
     for (let i = 0; i < eventArray.length; i++) {
         output += `
-        <div class="single-race">
+        <div class="single-race" onclick="displayEvent(${i})">
             <div class="grid">
                 <table>
                     <tr>
@@ -44,5 +45,11 @@ function showUpcomingEvents() {
 }
 
 
-
+//Onclick - display event details
+//Move to event page
+//Update event index
+function displayEvent(index) {
+    localStorage.setItem(KEY_EVENT_INDEX, index);
+    window.location.assign(`html/event-display.html`)
+}
 

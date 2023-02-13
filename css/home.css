@@ -71,3 +71,6 @@ table cells <td> padding
 }
 
 
+.single-race:hover {
+    border: 2px black solid;
+}

@@ -1,0 +1,7 @@
+/*** Toggle switch ***/
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    height: 90%;
+}

@@ -35,15 +35,15 @@ if (getLocalStorage(KEY_RACE) != null) {
 }
 
 
-// //Indicies
-// if (getLocalStorage(KEY_EVENT_INDEX) != null) {
-//     eventIndex = getLocalStorage(KEY_EVENT_INDEX);
-// } else {
-//     setLocalStorage(KEY_EVENT_INDEX, "");
-// }
+//Indicies
+if (getLocalStorage(KEY_EVENT_INDEX) != null) {
+    eventIndex = getLocalStorage(KEY_EVENT_INDEX);
+} else {
+    setLocalStorage(KEY_EVENT_INDEX, "");
+}
 
-// if (getLocalStorage(KEY_RACE_INDEX) != null) {
-//     raceIndex = getLocalStorage(KEY_RACE_INDEX);
-// } else {
-//     setLocalStorage(KEY_RACE_INDEX, "");
-// }
+if (getLocalStorage(KEY_RACE_INDEX) != null) {
+    raceIndex = getLocalStorage(KEY_RACE_INDEX);
+} else {
+    setLocalStorage(KEY_RACE_INDEX, "");
+}
