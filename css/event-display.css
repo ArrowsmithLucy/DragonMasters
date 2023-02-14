@@ -114,13 +114,16 @@
 @media (max-width:867.50px) {
   .single-race {
     width: -webkit-fill-available;
-    height: 400px;
+    height: 300px;
   }
   .screen-width-cols {
     column-count: 3;
   }
   td {
     width: 150px;
+  }
+  hr {
+    margin: 0;
   }
 
 }
