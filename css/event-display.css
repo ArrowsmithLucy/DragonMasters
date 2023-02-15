@@ -119,8 +119,13 @@ td.pad-left {
 }
 
 .cols {
-  column-count: 4;
+  column-gap: 3vw;
 }
+
+
+
+
+/*** Media Queries ***/
 
 @media (min-width: 890px) {
   .fill {
@@ -155,4 +160,22 @@ td.pad-left {
     width: 100%;
   }
 
+}
+
+
+
+@media (min-width: 480px) {
+  .cols {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cols {
+    column-count: 3;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .cols {
+    column-count: 4;
+  }
 }
