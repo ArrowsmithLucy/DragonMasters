@@ -118,6 +118,10 @@ td.pad-left {
   border: 2px black solid;
 }
 
+.cols {
+  column-count: 4;
+}
+
 @media (min-width: 890px) {
   .fill {
     min-width: 100%;
@@ -150,6 +154,5 @@ td.pad-left {
   td.pad-left {
     width: 100%;
   }
-
 
 }
