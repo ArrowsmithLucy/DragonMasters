@@ -1,7 +1,7 @@
-export const data = [
+const data = [
     {
-      _first_fullName: "Anne",
-      _sur_fullName: "King",
+      _firstName: "Anne",
+      _surname: "King",
       _gender: "F",
       _fullName: "Anne King",
       _left: "Anne King",
@@ -18,8 +18,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Annette",
-      _sur_fullName: "Chappel",
+      _firstName: "Annette",
+      _surname: "Chappel",
       _gender: "F",
       _fullName: "Annette Chappel",
       _left: "Annette Chappel",
@@ -39,8 +39,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Annie",
-      _sur_fullName: "Coates",
+      _firstName: "Annie",
+      _surname: "Coates",
       _gender: "F",
       _fullName: "Annie Coates",
       _left: "Annie Coates",
@@ -60,8 +60,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Beverley",
-      _sur_fullName: "Davison",
+      _firstName: "Beverley",
+      _surname: "Davison",
       _gender: "F",
       _fullName: "Beverley Davison",
       _left: "Beverley Davison",
@@ -81,8 +81,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Catherine",
-      _sur_fullName: "Riddoch",
+      _firstName: "Catherine",
+      _surname: "Riddoch",
       _gender: "F",
       _fullName: "Catherine Riddoch",
       _left: "Catherine Riddoch",
@@ -102,8 +102,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Cathy",
-      _sur_fullName: "Urie",
+      _firstName: "Cathy",
+      _surname: "Urie",
       _gender: "F",
       _fullName: "Cathy Urie",
       _left: "Cathy Urie",
@@ -123,8 +123,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Christel",
-      _sur_fullName: "Hendrieckx",
+      _firstName: "Christel",
+      _surname: "Hendrieckx",
       _gender: "F",
       _fullName: "Christel Hendrieckx",
       _left: "Christel Hendrieckx",
@@ -144,8 +144,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Claire",
-      _sur_fullName: "Robinson",
+      _firstName: "Claire",
+      _surname: "Robinson",
       _gender: "F",
       _fullName: "Claire Robinson",
       _left: "Claire Robinson",
@@ -165,8 +165,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Colleen",
-      _sur_fullName: "Sells",
+      _firstName: "Colleen",
+      _surname: "Sells",
       _gender: "F",
       _fullName: "Colleen Sells",
       _left: "Colleen Sells",
@@ -186,8 +186,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Elizabeth",
-      _sur_fullName: "Liston",
+      _firstName: "Elizabeth",
+      _surname: "Liston",
       _gender: "F",
       _fullName: "Elizabeth Liston",
       _left: "Elizabeth Liston",
@@ -207,8 +207,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jan",
-      _sur_fullName: "Hagston",
+      _firstName: "Jan",
+      _surname: "Hagston",
       _gender: "F",
       _fullName: "Jan Hagston",
       _left: "Jan Hagston",
@@ -228,8 +228,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Janet",
-      _sur_fullName: "Buckley",
+      _firstName: "Janet",
+      _surname: "Buckley",
       _gender: "F",
       _fullName: "Janet Buckley",
       _left: "Janet Buckley",
@@ -249,8 +249,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jennifer",
-      _sur_fullName: "Atkins",
+      _firstName: "Jennifer",
+      _surname: "Atkins",
       _gender: "F",
       _fullName: "Jennifer Atkins",
       _left: "Jennifer Atkins",
@@ -270,8 +270,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jennifer",
-      _sur_fullName: "Donnelly",
+      _firstName: "Jennifer",
+      _surname: "Donnelly",
       _gender: "F",
       _fullName: "Jennifer Donnelly",
       _left: "Jennifer Donnelly",
@@ -291,8 +291,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jenny",
-      _sur_fullName: "Britt",
+      _firstName: "Jenny",
+      _surname: "Britt",
       _gender: "F",
       _fullName: "Jenny Britt",
       _left: "Jenny Britt",
@@ -312,8 +312,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jenny",
-      _sur_fullName: "Gibson",
+      _firstName: "Jenny",
+      _surname: "Gibson",
       _gender: "F",
       _fullName: "Jenny Gibson",
       _left: "Jenny Gibson",
@@ -333,8 +333,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jenny",
-      _sur_fullName: "Walsh",
+      _firstName: "Jenny",
+      _surname: "Walsh",
       _gender: "F",
       _fullName: "Jenny Walsh",
       _left: "Jenny Walsh",
@@ -354,8 +354,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jill",
-      _sur_fullName: "Hicks",
+      _firstName: "Jill",
+      _surname: "Hicks",
       _gender: "F",
       _fullName: "Jill Hicks",
       _left: "Jill Hicks",
@@ -375,8 +375,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Lili",
-      _sur_fullName: "Chan",
+      _firstName: "Lili",
+      _surname: "Chan",
       _gender: "F",
       _fullName: "Lili Chan",
       _left: "Lili Chan",
@@ -396,8 +396,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Lisa",
-      _sur_fullName: "Burns",
+      _firstName: "Lisa",
+      _surname: "Burns",
       _gender: "F",
       _fullName: "Lisa Burns",
       _left: "Lisa Burns",
@@ -417,8 +417,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Lorna",
-      _sur_fullName: "Williams",
+      _firstName: "Lorna",
+      _surname: "Williams",
       _gender: "F",
       _fullName: "Lorna Williams",
       _left: "Lorna Williams",
@@ -438,8 +438,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Marianne",
-      _sur_fullName: "Clarke",
+      _firstName: "Marianne",
+      _surname: "Clarke",
       _gender: "F",
       _fullName: "Marianne Clarke",
       _left: "Marianne Clarke",
@@ -459,8 +459,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Margaret",
-      _sur_fullName: "Birrell",
+      _firstName: "Margaret",
+      _surname: "Birrell",
       _gender: "F",
       _fullName: "Margaret Birrell",
       _left: "Margaret Birrell",
@@ -480,8 +480,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Nikki",
-      _sur_fullName: "McKay",
+      _firstName: "Nikki",
+      _surname: "McKay",
       _gender: "F",
       _fullName: "Nikki McKay",
       _left: "Nikki McKay",
@@ -501,8 +501,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Philippa",
-      _sur_fullName: "McLean",
+      _firstName: "Philippa",
+      _surname: "McLean",
       _gender: "F",
       _fullName: "Philippa McLean",
       _left: "Philippa McLean",
@@ -522,8 +522,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Rhonda",
-      _sur_fullName: "Jacobs",
+      _firstName: "Rhonda",
+      _surname: "Jacobs",
       _gender: "F",
       _fullName: "Rhonda Jacobs",
       _left: "Rhonda Jacobs",
@@ -543,8 +543,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Ruth",
-      _sur_fullName: "Gallant",
+      _firstName: "Ruth",
+      _surname: "Gallant",
       _gender: "F",
       _fullName: "Ruth Gallant",
       _left: "Ruth Gallant",
@@ -564,8 +564,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Sharon",
-      _sur_fullName: "Higgins",
+      _firstName: "Sharon",
+      _surname: "Higgins",
       _gender: "F",
       _fullName: "Sharon Higgins",
       _left: "Sharon Higgins",
@@ -585,8 +585,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Solange",
-      _sur_fullName: "Rossi",
+      _firstName: "Solange",
+      _surname: "Rossi",
       _gender: "F",
       _fullName: "Solange Rossi",
       _left: "Solange Rossi",
@@ -606,8 +606,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Sue",
-      _sur_fullName: "Burdon-Jones",
+      _firstName: "Sue",
+      _surname: "Burdon-Jones",
       _gender: "F",
       _fullName: "Sue Burdon-Jones",
       _left: "Sue Burdon-Jones",
@@ -627,8 +627,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Teresa",
-      _sur_fullName: "Pertzel",
+      _firstName: "Teresa",
+      _surname: "Pertzel",
       _gender: "F",
       _fullName: "Teresa Pertzel",
       _left: "Teresa Pertzel",
@@ -648,8 +648,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Therese",
-      _sur_fullName: "Williams",
+      _firstName: "Therese",
+      _surname: "Williams",
       _gender: "F",
       _fullName: "Therese Williams",
       _left: "Therese Williams",
@@ -669,8 +669,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Vicki",
-      _sur_fullName: "Shannon",
+      _firstName: "Vicki",
+      _surname: "Shannon",
       _gender: "F",
       _fullName: "Vicki Shannon",
       _left: "Vicki Shannon",
@@ -690,8 +690,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Vivienne",
-      _sur_fullName: "Halat",
+      _firstName: "Vivienne",
+      _surname: "Halat",
       _gender: "F",
       _fullName: "Vivienne Halat",
       _left: "Vivienne Halat",
@@ -711,8 +711,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Zonda",
-      _sur_fullName: "Lynn",
+      _firstName: "Zonda",
+      _surname: "Lynn",
       _gender: "F",
       _fullName: "Zonda Lynn",
       _left: "Zonda Lynn",
@@ -732,8 +732,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Adrian",
-      _sur_fullName: "Stephens",
+      _firstName: "Adrian",
+      _surname: "Stephens",
       _gender: "M",
       _fullName: "Adrian Stephens",
       _left: "Adrian Stephens",
@@ -753,8 +753,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Alex",
-      _sur_fullName: "Ang",
+      _firstName: "Alex",
+      _surname: "Ang",
       _gender: "M",
       _fullName: "Alex Ang",
       _left: "Alex Ang",
@@ -774,8 +774,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Alan",
-      _sur_fullName: "Blackman",
+      _firstName: "Alan",
+      _surname: "Blackman",
       _gender: "M",
       _fullName: "Alan Blackman",
       _left: "Alan Blackman",
@@ -795,8 +795,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Ben",
-      _sur_fullName: "Goldman",
+      _firstName: "Ben",
+      _surname: "Goldman",
       _gender: "M",
       _fullName: "Ben Goldman",
       _left: "Ben Goldman",
@@ -816,8 +816,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "David",
-      _sur_fullName: "McLatchie",
+      _firstName: "David",
+      _surname: "McLatchie",
       _gender: "M",
       _fullName: "David McLatchie",
       _left: "David McLatchie",
@@ -837,8 +837,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "David",
-      _sur_fullName: "Nairn",
+      _firstName: "David",
+      _surname: "Nairn",
       _gender: "M",
       _fullName: "David Nairn",
       _left: "David Nairn",
@@ -858,8 +858,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Gordon",
-      _sur_fullName: "Tribbick",
+      _firstName: "Gordon",
+      _surname: "Tribbick",
       _gender: "M",
       _fullName: "Gordon Tribbick",
       _left: "Gordon Tribbick",
@@ -879,8 +879,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Ian",
-      _sur_fullName: "Norman",
+      _firstName: "Ian",
+      _surname: "Norman",
       _gender: "M",
       _fullName: "Ian Norman",
       _left: "Ian Norman",
@@ -900,8 +900,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jeff",
-      _sur_fullName: "Saunders",
+      _firstName: "Jeff",
+      _surname: "Saunders",
       _gender: "M",
       _fullName: "Jeff Saunders",
       _left: "Jeff Saunders",
@@ -921,8 +921,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Jit",
-      _sur_fullName: "Lim",
+      _firstName: "Jit",
+      _surname: "Lim",
       _gender: "M",
       _fullName: "Jit Lim",
       _left: "Jit Lim",
@@ -942,8 +942,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Joe",
-      _sur_fullName: "Gomory",
+      _firstName: "Joe",
+      _surname: "Gomory",
       _gender: "M",
       _fullName: "Joe Gomory",
       _left: "Joe Gomory",
@@ -963,8 +963,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "John",
-      _sur_fullName: "Moffat",
+      _firstName: "John",
+      _surname: "Moffat",
       _gender: "M",
       _fullName: "John Moffat",
       _left: "John Moffat",
@@ -984,8 +984,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "John",
-      _sur_fullName: "Robinson",
+      _firstName: "John",
+      _surname: "Robinson",
       _gender: "M",
       _fullName: "John Robinson",
       _left: "John Robinson",
@@ -1005,8 +1005,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Kamal",
-      _sur_fullName: "Baidawi",
+      _firstName: "Kamal",
+      _surname: "Baidawi",
       _gender: "M",
       _fullName: "Kamal Baidawi",
       _left: "Kamal Baidawi",
@@ -1026,8 +1026,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Mark",
-      _sur_fullName: "Hammond",
+      _firstName: "Mark",
+      _surname: "Hammond",
       _gender: "M",
       _fullName: "Mark Hammond",
       _left: "Mark Hammond",
@@ -1047,8 +1047,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Mark",
-      _sur_fullName: "van Tatenhove",
+      _firstName: "Mark",
+      _surname: "van Tatenhove",
       _gender: "M",
       _fullName: "Mark van Tatenhove",
       _left: "Mark van Tatenhove",
@@ -1068,8 +1068,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Mark",
-      _sur_fullName: "Wood",
+      _firstName: "Mark",
+      _surname: "Wood",
       _gender: "M",
       _fullName: "Mark Wood",
       _left: "Mark Wood",
@@ -1089,8 +1089,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Mike",
-      _sur_fullName: "Lee",
+      _firstName: "Mike",
+      _surname: "Lee",
       _gender: "M",
       _fullName: "Mike Lee",
       _left: "Mike Lee",
@@ -1110,8 +1110,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Mike",
-      _sur_fullName: "McGenniskin",
+      _firstName: "Mike",
+      _surname: "McGenniskin",
       _gender: "M",
       _fullName: "Mike McGenniskin",
       _left: "Mike McGenniskin",
@@ -1131,8 +1131,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Paul",
-      _sur_fullName: "Driver",
+      _firstName: "Paul",
+      _surname: "Driver",
       _gender: "M",
       _fullName: "Paul Driver",
       _left: "Paul Driver",
@@ -1152,8 +1152,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Paul",
-      _sur_fullName: "Shannon",
+      _firstName: "Paul",
+      _surname: "Shannon",
       _gender: "M",
       _fullName: "Paul Shannon",
       _left: "Paul Shannon",
@@ -1173,8 +1173,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Richard",
-      _sur_fullName: "Chan",
+      _firstName: "Richard",
+      _surname: "Chan",
       _gender: "M",
       _fullName: "Richard Chan",
       _left: "Richard Chan",
@@ -1194,8 +1194,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Rob",
-      _sur_fullName: "Stewart",
+      _firstName: "Rob",
+      _surname: "Stewart",
       _gender: "M",
       _fullName: "Rob Stewart",
       _left: "Rob Stewart",
@@ -1215,8 +1215,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Ross",
-      _sur_fullName: "Parker",
+      _firstName: "Ross",
+      _surname: "Parker",
       _gender: "M",
       _fullName: "Ross Parker",
       _left: "Ross Parker",
@@ -1236,8 +1236,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Sam",
-      _sur_fullName: "Donato",
+      _firstName: "Sam",
+      _surname: "Donato",
       _gender: "M",
       _fullName: "Sam Donato",
       _left: "Sam Donato",
@@ -1257,8 +1257,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Stephen",
-      _sur_fullName: "Arrowsmith",
+      _firstName: "Stephen",
+      _surname: "Arrowsmith",
       _gender: "M",
       _fullName: "Stephen Arrowsmith",
       _left: "Stephen Arrowsmith",
@@ -1278,8 +1278,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Steve",
-      _sur_fullName: "Kaplan",
+      _firstName: "Steve",
+      _surname: "Kaplan",
       _gender: "M",
       _fullName: "Steve Kaplan",
       _left: "Steve Kaplan",
@@ -1299,8 +1299,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Victor",
-      _sur_fullName: "Usher",
+      _firstName: "Victor",
+      _surname: "Usher",
       _gender: "M",
       _fullName: "Victor Usher",
       _left: "Victor Usher",
@@ -1320,8 +1320,8 @@ export const data = [
       Reserve: ""
     },
     {
-      _first_fullName: "Wayne",
-      _sur_fullName: "Chappel",
+      _firstName: "Wayne",
+      _surname: "Chappel",
       _gender: "M",
       _fullName: "Wayne Chappel",
       _left: "Wayne Chappel",
@@ -1341,3 +1341,50 @@ export const data = [
       Reserve: ""
     }
 ]
+
+
+let newData = data;
+for (let i = 0; i < data.length; i++) {
+  //if memeber is left
+  if (data[i]._left.length > 0) {
+    newData[i]._left = "Yes"
+  } else {
+    newData[i]._left = "No"
+  }
+  //if member is right
+  if (data[i]._right.length > 0) {
+    newData[i]._right = "Yes"
+  } else {
+    newData[i]._right = "No"
+  }
+  //if member has a preference
+  if (data[i]._preference == "_left") {
+    newData[i]._preference = "left"
+  } else if (data[i]._preference == "_right") {
+    newData[i]._preference = "right"
+  } else {
+    newData[i]._preference = "None"
+  }
+  //if member can be a sweep
+  if (data[i]._sweep.length > 0) {
+    newData[i]._sweep = "Yes"
+  } else {
+    newData[i]._sweep = "No"
+  }
+  //if member can be a drummer
+  if (data[i]._drummer.length > 0) {
+    newData[i]._drummer = "Yes"
+  } else {
+    newData[i]._drummer = "No"
+  }
+
+  delete newData[i]._fullName
+  delete newData[i].Regatta
+  delete newData[i].Men
+  delete newData[i].Women
+  delete newData[i]._paddling
+  delete newData[i].Reserve
+}
+
+
+
