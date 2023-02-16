@@ -1386,5 +1386,7 @@ for (let i = 0; i < data.length; i++) {
   delete newData[i].Reserve
 }
 
+export const finalData = newData;
+
 
 
