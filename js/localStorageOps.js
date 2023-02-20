@@ -2,6 +2,7 @@
 
 const KEY_EVENT = "events"
 const KEY_RACE = "races"
+const KEY_MEMBERS = "members"
 const KEY_EVENT_INDEX = "eventIndex"
 const KEY_RACE_INDEX = "raceIndex"
 
@@ -47,3 +48,4 @@ if (getLocalStorage(KEY_RACE_INDEX) != null) {
 } else {
     setLocalStorage(KEY_RACE_INDEX, "");
 }
+

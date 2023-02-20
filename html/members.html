@@ -13,8 +13,10 @@
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
     <link href="../css/members.css" rel="stylesheet">
     <!-- JS files -->
-
+    <script src="../js/localStorageOps.js"></script>
+    <script src="../data.js"></script>
 </head>
+
 
 <body>
     <header class="header-bg" id="header">
@@ -58,9 +60,16 @@
                         <button type="button" id="filter">
                             <i class="bi bi-sort-down"></i>
                         </button>
-                        <button type="button" id="sort">
-                            <i class="bi bi-filter-square"></i>
-                        </button>
+                        <div class="dropdown">
+                            <button type="button" id="sort">
+                                <i class="bi bi-filter-square"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">First Name</a></li>
+                                <li><a class="dropdown-item" onclick="console.log('lastname')">Last Name</a></li>
+                                <li><a class="dropdown-item">Weight</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="rows">
@@ -79,43 +88,9 @@
                                 <th>No. Races</th>
                                 <th>Sweep/Drummer</th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                    </div>
-                                </td>
-                                <td>Anne</td>
-                                <td>King</td>
-                                <td>F</td>
-                                <td>No</td>
-                                <td>No</td>
-                                <td>77.2</td>
-                                <td>Left</td>
-                                <td>C</td>
-                                <td>1</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                    </div>
-                                </td>
-                                <td>Jeff</td>
-                                <td>Saunders</td>
-                                <td>M</td>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>70</td>
-                                <td>None</td>
-                                <td>C</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
                         </thead>
+                        <tbody id="members">
+                            <!-- Display Members -->
                         <tbody>
 
                         </tbody>
@@ -124,4 +99,7 @@
             </div>
         </div>
     </section>
+
+    <script src="../js/members.js"></script>
 </body>
+</html>
