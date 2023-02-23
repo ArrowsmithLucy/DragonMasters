@@ -56,61 +56,14 @@
                 <button onclick="showParticipants()">Particpants</button>
             </div>
             <div class="row">
-                <div class="col">
-                    <table class="fill"> <!-- Edit participants -->
-                        <tbody id="viewParticipants" hidden>
-                            <tr>
-                                <td class="center">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="pad-left">
-                                    Stephen Arrowsmith
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="center">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="pad-left">
-                                    Stephen Arrowsmith
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="center">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="pad-left">
-                                    Stephen Arrowsmith
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="center">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="pad-left">
-                                    Stephen Arrowsmith
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div id="participants" class="col">
+                    <!-- Edit Participants -->
 
                     <div id="viewParticipants">
                     <!-- Show list of participating members -->
                         <h5>Member count: <span id="member-count">36</span></h5>
                         <div class="center-x">
-                            <div class="cols">
+                            <div class="cols" style="width:max-content">
                                 <ol>
                                     <li>Stephen Arrowsmith</li>
                                     <li>Stephen Arrowsmith</li>
@@ -142,10 +95,10 @@
                                 </ol>
                             </div>
                         </div>
+                        <div class="row end">
+                            <button class="tab-btn" onclick="editParticipants()">Edit</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row end">
-                    <button class="tab-btn">Edit</button>
                 </div>
             </div>
         </div>
@@ -153,7 +106,7 @@
     <section class="container"> <!-- Races to show -->
         <div class="row">
             <div class="row pad-btm">
-                <button onclick="showParticipants()">Particpants</button>
+                <button onclick="showRaces()">Races</button>
             </div>
             <div class="row race-wrapper in-line columns">
                 <div class="row single-race">

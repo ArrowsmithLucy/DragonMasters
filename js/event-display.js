@@ -20,16 +20,66 @@ displayDetails()
 
 //When participants button/tab is clicked, hide section
 function showParticipants() {
-    if (document.getElementById("participants").attributes == null) {
-        document.getElementById("participants").removeAttribute("hidden")        
+    let participants = document.getElementById("viewParticipants");
+    if (participants.attributes.getNamedItem("hidden") != null) {
+        participants.removeAttribute("hidden") 
     } else {
-        document.getElementById("participants").setAttribute("hidden", "")
+        participants.setAttribute("hidden", "")
     }
 }
 
+//When Edit button is clicked, swap list of names to editable names
+function editParticipants() {
+    let membersArray = getLocalStorage(KEY_MEMBERS)
+    let edit = document.getElementById("participants")
+    let output = `
+    <table class="fill">
+        <tbody id="editParticipants">`;
+    
+    for (let i = 0; i < membersArray.length; i++) {
+        output += `
+        <tr>
+            <td class="center">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td class="pad-left">
+                ${membersArray[i]._firstName} ${membersArray[i]._surname}
+            </td>
+        </tr>
+        `
+        if ( i === membersArray.length -1 ) {
+            output += `
+                    <tr>
+                        <td class="center">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                        <td class="pad-left">
+                            ${membersArray[i]._firstName} ${membersArray[i]._surname}
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <button>Save</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            `
+        }
+    }
 
-// home-wrapper
-// in-line
-// columns
-// single-race
-// members-box
+    document.getElementById("participants").innerHTML = output;
+      
+}
+
+function saveParticipants() {
+    
+}
