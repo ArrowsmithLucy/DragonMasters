@@ -53,3 +53,4 @@ function displayEvent(index) {
     window.location.assign(`html/event-display.html`)
 }
 
+

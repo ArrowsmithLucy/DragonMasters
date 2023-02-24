@@ -55,4 +55,7 @@ if (getLocalStorage(KEY_RACE_INDEX) != null) {
     setLocalStorage(KEY_RACE_INDEX, "");
 }
 
-import { memberData } from "../modules/data.mjs"
+
+import { memberData } from "../modules/data.js"
+let newData = memberData()
+console.log(newData)
