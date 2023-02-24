@@ -17,7 +17,7 @@
 }
 #participants {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 th {
   padding-bottom: 1rem;
@@ -131,9 +131,6 @@ td.pad-left {
   .fill {
     min-width: 100%;
   }
-  #participants {
-    margin-right: 50%;
-  }
 }
 
 @media (max-width:867.50px) {
@@ -168,6 +165,10 @@ td.pad-left {
   .cols {
     column-count: 2;
   }
+  #editParticipants {
+    display: block;
+    column-count: 2;
+  }
 }
 @media screen and (min-width: 769px) {
   .cols {
@@ -177,5 +178,9 @@ td.pad-left {
 @media screen and (min-width: 1025px) {
   .cols {
     column-count: 4;
+  }
+  #editParticipants {
+    display: block;
+    column-count: 3;
   }
 }

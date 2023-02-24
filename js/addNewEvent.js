@@ -1,28 +1,25 @@
 
 
 //Getting current local storage
-getLocalStorage(KEY_EVENT)
+let eventArray = getLocalStorage(KEY_EVENT)
 
 
 //Creates a new event & adds to local storage
 function addNewEvent() {
 
-    let dateFrom = document.getElementById("dateFrom").value
-    let dateTo = document.getElementById("dateTo").value
-    let loc = document.getElementById("location").value
-    let attendees = Number(document.getElementById("attendees").value)
-
-
     let newEvent = {
         dateFrom:document.getElementById("dateFrom").value,
         dateTo:document.getElementById("dateTo").value,
         location:document.getElementById("location").value,
-        noOfAttendees:document.getElementById("attendees").value,
+        attendees: {
+            count:Number(document.getElementById("attendees").value),
+            attendees:[]
+        },
         races:[]
     };
 
-    localStorage.setItem(KEY_EVENT, events.push(newEvent));
-    setLocalStorage(KEY_EVENT, events);
+    localStorage.setItem(KEY_EVENT, eventArray.push(newEvent));
+    setLocalStorage(KEY_EVENT, eventArray);
 
     window.location.assign("../index.html");
 

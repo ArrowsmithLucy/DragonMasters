@@ -80,6 +80,3 @@ function editParticipants() {
       
 }
 
-function saveParticipants() {
-    
-}
