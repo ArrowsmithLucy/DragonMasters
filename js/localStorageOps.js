@@ -24,18 +24,6 @@ function setLocalStorage(keyToSet, data) {
 
 //Setting initial local storage on start up 
 //Arrays
-if (getLocalStorage(KEY_EVENT) != null) {
-    events = getLocalStorage(KEY_EVENT);
-} else {
-    setLocalStorage(KEY_EVENT, "");
-}
-
-if (getLocalStorage(KEY_RACE) != null) {
-    races = getLocalStorage(KEY_RACE);
-} else {
-    setLocalStorage(KEY_RACE, "");
-}
-
 if (getLocalStorage(KEY_MEMBERS) != null) {
     members = getLocalStorage(KEY_MEMBERS);
 } else {

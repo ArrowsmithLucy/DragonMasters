@@ -4,12 +4,13 @@
 let eventArray = getLocalStorage(KEY_EVENT)
 
 
+
 function displayDetails() {
 
     let dateFrom = new Date(eventArray[eventIndex].dateFrom).toDateString().slice(0,10)
     let dateTo = new Date(eventArray[eventIndex].dateTo).toDateString()
 
-    document.getElementById("eventDate").innerText = `${dateFrom} - ${dateTo}`
+    document.getElementById("eventDate").innerText = `${dateFrom}  -  ${dateTo}`
     document.getElementById("eventLocation").innerText = `${eventArray[eventIndex].location}`
 
     //Add event title
@@ -19,7 +20,7 @@ function displayDetails() {
 displayDetails()
 
 //When participants button/tab is clicked, hide section
-function showParticipants() {
+function showParticipantsTab() {
     let participants = document.getElementById("viewParticipants");
     if (participants.attributes.getNamedItem("hidden") != null) {
         participants.removeAttribute("hidden") 
@@ -41,7 +42,7 @@ function editParticipants() {
         <tr>
             <td class="center">
                 <label class="switch">
-                    <input type="checkbox">
+                    <input name="member" value="${i}" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </td>
@@ -67,7 +68,7 @@ function editParticipants() {
                 <tfoot>
                     <tr>
                         <td>
-                            <button>Save</button>
+                            <button onclick="addParticipants()" >Save</button>
                         </td>
                     </tr>
                 </tfoot>
@@ -75,8 +76,22 @@ function editParticipants() {
             `
         }
     }
-
-    document.getElementById("participants").innerHTML = output;
-      
+    document.getElementById("participants").innerHTML = output; 
 }
 
+ 
+function addParticipants() {
+    let members = document.getElementsByName("member");
+    let membersArray = getLocalStorage(KEY_MEMBERS)
+
+    for (let i = 0; i < members.length; i++) {
+        if (members[i].checked == true) {
+            eventArray[eventIndex].attendees.attendees.push(membersArray[i])
+        }
+    }
+    localStorage.setItem(KEY_EVENT, eventArray[eventIndex.attendees.attendees])
+}
+
+// function showParticipants() {
+
+// }
