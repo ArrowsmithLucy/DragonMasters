@@ -22,8 +22,15 @@ function setLocalStorage(keyToSet, data) {
     return localStorage.setItem(keyToSet, JSONConverted)
 }
 
+
 //Setting initial local storage on start up 
 //Arrays
+if (getLocalStorage(KEY_EVENT) != null) {
+  events = getLocalStorage(KEY_EVENT);
+} else {
+  setLocalStorage(KEY_EVENT, []);
+}
+
 if (getLocalStorage(KEY_MEMBERS) != null) {
     members = getLocalStorage(KEY_MEMBERS);
 } else {

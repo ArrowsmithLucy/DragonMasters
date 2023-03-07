@@ -12,8 +12,7 @@ function addNewEvent() {
         dateTo:document.getElementById("dateTo").value,
         location:document.getElementById("location").value,
         attendees: {
-            count:Number(document.getElementById("attendees").value),
-            attendees:[]
+            members:[]
         },
         races:[]
     };

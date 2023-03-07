@@ -3,6 +3,13 @@
 
 let eventArray = getLocalStorage(KEY_EVENT)
 
+//check if count has been added & if not, update
+if (eventArray[eventIndex].attendees.hasOwnProperty('count') === true) {
+    eventArray[eventIndex].attendees.count = eventArray[eventIndex].attendees.members.length
+} else {
+    eventArray[eventIndex].attendees.count = 0
+    localStorage.setItem(KEY_EVENT, eventArray[eventIndex].attendees.count = 0)
+}
 
 
 function displayDetails() {
@@ -86,12 +93,16 @@ function addParticipants() {
 
     for (let i = 0; i < members.length; i++) {
         if (members[i].checked == true) {
-            eventArray[eventIndex].attendees.attendees.push(membersArray[i])
+            eventArray[eventIndex].attendees.members.push(membersArray[i])
         }
     }
-    localStorage.setItem(KEY_EVENT, eventArray[eventIndex.attendees.attendees])
+    localStorage.setItem(KEY_EVENT, eventArray[eventIndex.attendees.members])
 }
 
-// function showParticipants() {
+function showParticipants() {
+    if (eventArray[eventIndex].attendees.members === 0) {
+        //Display button to add members
+        document.getElementById("participants").innerHTML = `No Members Added`
+    }
 
-// }
+}
