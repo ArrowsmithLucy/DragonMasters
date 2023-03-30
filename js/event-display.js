@@ -87,16 +87,18 @@ function editParticipants() {
 }
 
  
-function addParticipants() {
+function addParticipants(index) {
     let members = document.getElementsByName("member");
     let membersArray = getLocalStorage(KEY_MEMBERS)
 
-    for (let i = 0; i < members.length; i++) {
+    for(let i = 0; i < members.length; i++) {
         if (members[i].checked == true) {
-            eventArray[eventIndex].attendees.members.push(membersArray[i])
+            //add to member array
         }
     }
-    localStorage.setItem(KEY_EVENT, eventArray[eventIndex.attendees.members])
+
+
+    document.querySelectorAll(".member")[i].checked 
 }
 
 function showParticipants() {
