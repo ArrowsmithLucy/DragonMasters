@@ -16,7 +16,7 @@ function showUpcomingEvents() {
     let output = ""
     for (let i = 0; i < eventArray.length; i++) {
         output += `
-        <div class="single-race" onclick="displayEvent(${i})">
+        <div class="single-race" onclick="displayEvent(${i}); goToEvent()">
             <div class="grid">
                 <table>
                     <tr>
@@ -33,7 +33,7 @@ function showUpcomingEvents() {
                     </tr>
                     <tr>
                         <td>No. of Attendees</td>
-                        <td>${eventArray[i].noOfAttendees}</td>
+                        <td>${eventArray[i].attendees.count}</td>
                     </tr>
                 </table>
             </div>
@@ -46,11 +46,12 @@ function showUpcomingEvents() {
 
 
 //Onclick - display event details
-//Move to event page
 //Update event index
 function displayEvent(index) {
     localStorage.setItem(KEY_EVENT_INDEX, index);
-    window.location.assign(`html/event-display.html`)
+}
+function goToEvent() {
+    window.location.assign("html/event-display.html");
 }
 
 

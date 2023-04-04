@@ -3,14 +3,6 @@
 
 let eventArray = getLocalStorage(KEY_EVENT)
 
-//check if count has been added & if not, update
-if (eventArray[eventIndex].attendees.hasOwnProperty('count') === true) {
-    eventArray[eventIndex].attendees.count = eventArray[eventIndex].attendees.members.length
-} else {
-    eventArray[eventIndex].attendees.count = 0
-    localStorage.setItem(KEY_EVENT, eventArray[eventIndex].attendees.count = 0)
-}
-
 
 function displayDetails() {
 
@@ -21,7 +13,6 @@ function displayDetails() {
     document.getElementById("eventLocation").innerText = `${eventArray[eventIndex].location}`
 
     //Add event title
-    
 }
 
 displayDetails()
@@ -93,7 +84,7 @@ function addParticipants(index) {
 
     for(let i = 0; i < members.length; i++) {
         if (members[i].checked == true) {
-            //add to member array
+            //add to eventArray[i]:attendees
         }
     }
 
@@ -106,5 +97,4 @@ function showParticipants() {
         //Display button to add members
         document.getElementById("participants").innerHTML = `No Members Added`
     }
-
 }

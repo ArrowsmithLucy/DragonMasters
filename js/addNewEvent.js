@@ -12,6 +12,7 @@ function addNewEvent() {
         dateTo:document.getElementById("dateTo").value,
         location:document.getElementById("location").value,
         attendees: {
+            count: 0,
             members:[]
         },
         races:[]
