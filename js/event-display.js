@@ -4,7 +4,9 @@
 let eventArray = getLocalStorage(KEY_EVENT);
 let index = getLocalStorage(KEY_EVENT_INDEX);
 
-
+/**
+ * Function: displays the selected event details. Will show dates and title. 
+ */
 function displayDetails() {
 
     let dateFrom = new Date(eventArray[eventIndex].dateFrom).toDateString().slice(0,10)
@@ -18,6 +20,7 @@ function displayDetails() {
 
 displayDetails()
 
+
 //When participants button/tab is clicked, hide section
 function showParticipantsTab() {
     let participants = document.getElementById("viewParticipants");
@@ -27,6 +30,7 @@ function showParticipantsTab() {
         participants.setAttribute("hidden", "")
     }
 }
+
 
 //When Edit button is clicked, swap list of names to editable names
 function editParticipants() {
@@ -78,42 +82,55 @@ function editParticipants() {
     document.getElementById("participants").innerHTML = output; 
 }
 
- 
+/**
+ * Function: from editable members, will update new list of members.
+ */
 function addParticipants() {
     let members = document.querySelectorAll(".member");
     let membersArray = getLocalStorage(KEY_MEMBERS);
     let eventArray = getLocalStorage(KEY_EVENT);
+    let dummyArray = [];
 
     for(let i = 0; i < members.length; i++) {
         if (members[i].checked === true) {
-            //checks if member already exists
-            if (eventArray[index].attendees.members.includes(membersArray[i])) {
-                break
-                //setLocalStorage(KEY_EVENT, eventArray);
-            } 
-            // else {
-            //     eventArray[index].attendees.members.push(membersArray[i]);
-            // }
-
-            
-        }
-        else if (members[i].checked === false) {
-            if (eventArray[index].attendees.members.includes(membersArray[i]) === true) {
-                let memberIndex = eventArray[index].attendees.members.findIndex((mem) => mem._id == membersArray[i]._id)
-                eventArray[index].attendees.members.splice(memberIndex, 1);
-                //setLocalStorage(KEY_EVENT, eventArray);
-            }
+            dummyArray.push(membersArray[i]);            
         }
     }
+    eventArray[index].attendees.members = dummyArray;
     eventArray[index].attendees.count = eventArray[index].attendees.members.length;
-    //setLocalStorage(KEY_EVENT, eventArray);
-    
-    console.log(eventArray);
+    setLocalStorage(KEY_EVENT, eventArray);    
 }
 
+
+/**
+ * Function: Shows current participating members in text form on screen.
+ */
 function showParticipants() {
-    if (eventArray[eventIndex].attendees.members === 0) {
+    if (eventArray[eventIndex].attendees.count == 0) {
         //Display button to add members
         document.getElementById("participants").innerHTML = `No Members Added`
+    } 
+    else if (eventArray[eventIndex].attendees.count != 0) {
+        let output = "<ol>";
+        let membersArray = eventArray[index].attendees.members;
+        for (let i = 0; i < membersArray.length; i++) {
+            output += `<li>${membersArray[i]._firstName} ${membersArray[i]._surname}</li>`
+        }
+        output += "</ol>"
+        document.getElementById("showMembers").innerHTML = output
+    }
+}
+
+
+
+/**
+ * Function: If member is currently participating in event, the switch is already checked. 
+ */
+function currentMembers() {
+    let members = document.querySelectorAll(".member");
+    let membersArray = eventArray[index].attendees.members;
+
+    for (let i = 0; i < membersArray.length; i++) {
+        //set member to checked
     }
 }
