@@ -14,6 +14,7 @@ function displayMembers() {
                         id="flexSwitchCheckDefault">
                 </div>
             </td>
+            <td>${membersArray[i]._id}</td>
             <td>${membersArray[i]._firstName}</td>
             <td>${membersArray[i]._surname}</td>
             <td>${membersArray[i]._gender}</td>

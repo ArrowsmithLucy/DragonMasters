@@ -1,7 +1,8 @@
 
 /* Event details page */
 
-let eventArray = getLocalStorage(KEY_EVENT)
+let eventArray = getLocalStorage(KEY_EVENT);
+let index = getLocalStorage(KEY_EVENT_INDEX);
 
 
 function displayDetails() {
@@ -40,7 +41,7 @@ function editParticipants() {
         <tr>
             <td class="center">
                 <label class="switch">
-                    <input name="member" value="${i}" type="checkbox">
+                    <input name="member" value="${i}" type="checkbox" class="member">
                     <span class="slider round"></span>
                 </label>
             </td>
@@ -78,18 +79,36 @@ function editParticipants() {
 }
 
  
-function addParticipants(index) {
-    let members = document.getElementsByName("member");
-    let membersArray = getLocalStorage(KEY_MEMBERS)
+function addParticipants() {
+    let members = document.querySelectorAll(".member");
+    let membersArray = getLocalStorage(KEY_MEMBERS);
+    let eventArray = getLocalStorage(KEY_EVENT);
 
     for(let i = 0; i < members.length; i++) {
-        if (members[i].checked == true) {
-            //add to eventArray[i]:attendees
+        if (members[i].checked === true) {
+            //checks if member already exists
+            if (eventArray[index].attendees.members.includes(membersArray[i])) {
+                break
+                //setLocalStorage(KEY_EVENT, eventArray);
+            } 
+            // else {
+            //     eventArray[index].attendees.members.push(membersArray[i]);
+            // }
+
+            
+        }
+        else if (members[i].checked === false) {
+            if (eventArray[index].attendees.members.includes(membersArray[i]) === true) {
+                let memberIndex = eventArray[index].attendees.members.findIndex((mem) => mem._id == membersArray[i]._id)
+                eventArray[index].attendees.members.splice(memberIndex, 1);
+                //setLocalStorage(KEY_EVENT, eventArray);
+            }
         }
     }
-
-
-    document.querySelectorAll(".member")[i].checked 
+    eventArray[index].attendees.count = eventArray[index].attendees.members.length;
+    //setLocalStorage(KEY_EVENT, eventArray);
+    
+    console.log(eventArray);
 }
 
 function showParticipants() {
