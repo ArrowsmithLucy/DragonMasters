@@ -18,18 +18,8 @@ function displayDetails() {
     //Add event title
 }
 
-displayDetails()
-
-
-//When participants button/tab is clicked, hide section
-function showParticipantsTab() {
-    let participants = document.getElementById("viewParticipants");
-    if (participants.attributes.getNamedItem("hidden") != null) {
-        participants.removeAttribute("hidden") 
-    } else {
-        participants.setAttribute("hidden", "")
-    }
-}
+displayDetails();
+showParticipants();
 
 
 //When Edit button is clicked, swap list of names to editable names
@@ -71,7 +61,7 @@ function editParticipants() {
                 <tfoot>
                     <tr>
                         <td>
-                            <button onclick="addParticipants()" >Save</button>
+                            <button onclick="addParticipants();">Save</button>
                         </td>
                     </tr>
                 </tfoot>
@@ -106,19 +96,29 @@ function addParticipants() {
  * Function: Shows current participating members in text form on screen.
  */
 function showParticipants() {
+    let output = "";
     if (eventArray[eventIndex].attendees.count == 0) {
         //Display button to add members
-        document.getElementById("participants").innerHTML = `No Members Added`
+        output += `No Members Added
+                   <div class="row end">
+                       <button class="tab-btn" onclick="editParticipants(); currentMembers();">Add Members</button>
+                   </div>`
     } 
     else if (eventArray[eventIndex].attendees.count != 0) {
-        let output = "<ol>";
+        output += `<div class="center-x">
+                        <div class="cols" style="width:max-content" id="showMembers">
+                            <ol>`;
         let membersArray = eventArray[index].attendees.members;
         for (let i = 0; i < membersArray.length; i++) {
             output += `<li>${membersArray[i]._firstName} ${membersArray[i]._surname}</li>`
         }
-        output += "</ol>"
-        document.getElementById("showMembers").innerHTML = output
+        output += `</ol></div></div>
+                    <div class="row end">
+                        <button class="tab-btn" onclick="editParticipants(); currentMembers();">Edit</button>
+                    </div>`;
     }
+
+    document.getElementById("participants").innerHTML = output;
 }
 
 
