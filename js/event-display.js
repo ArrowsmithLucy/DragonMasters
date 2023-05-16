@@ -34,34 +34,21 @@ function editParticipants() {
         output += `
         <tr>
             <td class="center">
-                <label class="switch">
-                    <input name="member" value="${i}" type="checkbox" class="member">
-                    <span class="slider round"></span>
-                </label>
-            </td>
-            <td class="pad-left">
-                ${membersArray[i]._firstName} ${membersArray[i]._surname}
+                <div class="form-check form-switch">
+                    <input class="member form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" name="member" value="${i}">
+                    <label class="form-check-label" for="flexSwitchCheckChecked" style="width: max-content">${membersArray[i]._firstName} ${membersArray[i]._surname}</label>
+                </div>
+
             </td>
         </tr>
         `
-        if ( i === membersArray.length -1 ) {
+        if ( i === membersArray.length -1 ) { //end of members array, close table
             output += `
-                    <tr>
-                        <td class="center">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </td>
-                        <td class="pad-left">
-                            ${membersArray[i]._firstName} ${membersArray[i]._surname}
-                        </td>
-                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>
-                            <button onclick="addParticipants();">Save</button>
+                            <button onclick="addParticipants(); showParticipants();">Save</button>
                         </td>
                     </tr>
                 </tfoot>
@@ -69,6 +56,7 @@ function editParticipants() {
             `
         }
     }
+    // currentMembers();
     document.getElementById("participants").innerHTML = output; 
 }
 
@@ -131,6 +119,10 @@ function currentMembers() {
     let membersArray = eventArray[index].attendees.members;
 
     for (let i = 0; i < membersArray.length; i++) {
-        //set member to checked
+        for (let j = 0; j < members.length; j++) {
+            if (membersArray[i]._id == members[j]._id) {
+                
+            }
+        }
     }
 }
