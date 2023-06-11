@@ -24,6 +24,7 @@ showParticipants();
 
 //When Edit button is clicked, swap list of names to editable names
 function editParticipants() {
+
     let membersArray = getLocalStorage(KEY_MEMBERS)
     let edit = document.getElementById("participants")
     let output = `
@@ -56,8 +57,9 @@ function editParticipants() {
             `
         }
     }
-    // currentMembers();
     document.getElementById("participants").innerHTML = output; 
+    currentMembers();
+
 }
 
 /**
@@ -115,14 +117,19 @@ function showParticipants() {
  * Function: If member is currently participating in event, the switch is already checked. 
  */
 function currentMembers() {
-    let members = document.querySelectorAll(".member");
+    
     let membersArray = eventArray[index].attendees.members;
 
     for (let i = 0; i < membersArray.length; i++) {
         for (let j = 0; j < members.length; j++) {
             if (membersArray[i]._id == members[j]._id) {
-                
+                document.getElementsByName("member").checked;
             }
         }
+    }
+
+
+    for (let i=0; i < membersArray.length; i++){ //3 names
+        
     }
 }
