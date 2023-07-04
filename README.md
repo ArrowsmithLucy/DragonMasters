@@ -7,7 +7,7 @@ The user group are 60+ year olds with extensive knowledge in Excel but and not e
 This project is aimed to be simplistic, easily readable and conforms to WCAG for accessible design. 
 This will be used on multiple transportable devices (iPads and laptops).
 
-Once the project is complete, the goal is to use an API instead of local storage.
+Currently working to integrate API, rather than local storage. This will be done via Vercel.
 And to be accessible across multiple users that can edit races simultaneously. 
 
 Am using Bootstrap and CSS to design aspects of the interface for a responsive design.
