@@ -30,7 +30,7 @@ do {
 //Sets first name
 for (let j=0; j<stubData.length; j++) {
     stubData[j]._firstName = "Person";
-    stubData[j]._surname = `${j}`;
+    stubData[j]._surname = "Person";
     stubData[j]._gender = randomGender();
     stubData[j]._fullName = stubData[j]._firstName + " " + stubData[j]._surname;
     stubData[j]._left = "Yes";
